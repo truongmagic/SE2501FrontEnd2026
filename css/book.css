@@ -1,0 +1,125 @@
+.menu {
+    background: linear-gradient(lightblue ,pink);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu > li {    
+    border-right: 1px solid gray;
+}
+
+.menu>li>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding:2rem;
+}
+
+.menu>li:last-child{
+    border-right: none;
+}
+
+.menu>li>a:hover{
+    background: linear-gradient(pink, lightblue);
+}
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+.subject{
+    text-align: center;
+    color: gray;
+    font-size:2rem;
+    text-shadow: 2px 2px 4px gray;
+    text-transform: uppercase;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    z-index: 9999;
+
+}
+
+.sub:hover .submenu{
+    display: block;
+}
+
+.submenu>li{
+    border-right: none;
+}
+
+.submenu::after{
+    content:" ";
+    border-width: 10px;
+    border-color: transparent transparent palevioletred transparent;
+    border-style: solid;
+    position: absolute;
+    bottom: 100%;
+    left:88%
+}
+
+/*BODY*/
+
+.book{
+    width: 20%;
+    padding:5px;
+}
+
+.book>div{
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.book img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.book img:hover{
+    transform: scale(1.1);
+}
+
+.close{
+    position: absolute;
+    top:10px;
+    right:15px;
+    text-decoration: none;
+}
+
+.book>div:hover{
+    box-shadow: 2px 2px 4px lightblue;
+}
+
+footer{
+    background: linear-gradient(pink, orange);
+    padding:5px;
+    overflow: hidden;
+}
+
+footer>span>h2{
+    position: relative;
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    from{
+        left:0px;
+    }
+    to{
+        left:100%;
+    }
+}
+
+
