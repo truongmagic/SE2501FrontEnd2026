@@ -1,0 +1,129 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.v-center{
+    align-items: center;
+}
+
+nav{
+    background: linear-gradient(to right bottom, pink ,lightblue, lightgreen);
+}
+
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.menu>li{
+    border-right: 1px solid;
+}
+
+.menu>li:last-child{
+    border-right: none;
+}
+
+.menu>li>a{
+    padding:2rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    background: linear-gradient(to right top,pink,lightblue,lightgreen );
+    margin-top: 3px;
+    padding: 2rem;
+}
+
+.logo>img{
+    max-width: 100%;
+}
+
+/* BODY */
+
+:root{
+    --paddingg:1rem;
+}
+
+.topic{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.topic>h2{
+    background: linear-gradient(blue, purple);
+    color: white;
+    padding:1rem;
+    margin-bottom: 0;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.forum{
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.forum:last-child{
+    border-bottom: none;
+}
+
+.forum img{
+    width: 140px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.forums {
+    background-color: lightblue;
+    border-radius: 0 0 var(--paddingg) var(--paddingg);
+}
+
+.forum a{
+    text-decoration: none;
+}
+
+/* QUANG CÁO */
+
+.ads{
+    margin-top:10px;
+}
+.ads>div{
+    color: white;
+    background: linear-gradient(lightblue, lightgreen);
+    width: 9%;
+    text-align: center  ;
+    padding: 7rem 0;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    position: fixed;
+}
+
+.left{
+    left:0.5%;
+}
+.right{
+    right:0.5%;
+}
+
+/* FOOTER */
+footer{
+    background-color: blanchedalmond;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.end{
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+
+
+
+
